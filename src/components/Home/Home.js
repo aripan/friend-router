@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       {friends.map((friend) => (
-        <Friend friend={friend}></Friend>
+        <Friend friend={friend} key={friend.id}></Friend>
       ))}
     </div>
   );
